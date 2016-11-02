@@ -41,7 +41,11 @@
 </div> -->
 <div class="container-fluid">
    <div class="row" style="background:black;position:fixed;width:110%;height: 15%; z-index:80;">
-   <a href="/" style="border:0; text-decoration:none;height:100%"><img src="/images/1black21.jpg" style="height:100%;float:left"></a>
+   <a href="/" style="border:0; text-decoration:none;height:100%"><img src="/images/1black2.jpg"  class="image_full" style="height:90%;float:left"></a>
+   <a href="/" style="border:0; text-decoration:none;height:100%"><img src="/images/contact.jpg"   class="image_full" style="height:90%;margin-left:100%;margin-top:2%"></a>
+      <a href="/" style="border:0; text-decoration:none;height:100%"><img src="/images/1black21.jpg"  class="image_mobile" style="height:90%;float:left"></a>
+
+
  
    </div>
                       
@@ -53,7 +57,7 @@
 					<strong><h2>UNDER CONSTRUCTION</h2></strong>
 
 					<ul class="actions">
-	<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal">Find Car</a></li>
+  <li><a href="#" class="button special" data-toggle="modal" data-target="#myModal1">Find Car</a></li>
 	<li><a href="#" class="button special" data-toggle="modal" data-target="#myModal1">Tire Service</a></li>
 					</ul>
 
@@ -118,7 +122,7 @@
 
 
 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document" style="width:600px">
+  <div class="modal-dialog" role="document" style="width:20%">
     <div class="modal-content">
       
       <div class="modal-body">
@@ -182,19 +186,27 @@
 				<section id="main" class="container">
 
 					<section class="box special">
-						
-							 <div id="map" style="width:100%"></div>
-						
+					<iframe style="pointer-events: none"
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmOaOgmNdNp7bcVGJfoO6Jwqw18UqiqA0
+    &q=782-784+Oxford+Rd,+Reading+RG30+1EL,+UK/@51.4613007,-1.0125581,17z" allowfullscreen>
+</iframe>
 						
 					</section>
 					 <section id="one" class="tiles">
-								<article>
-								<p><a href="/register">adsdadsds</a></p>
-									<span class="image">
-											asdsds
-									</span>
-									
+              
+								<article >
+             
+            <span class="image" id="111">
+                    <img src="/images/carwash.jpg" alt="" />
+                  </span>
+               
+								
+							
 								</article>
+               
 								<article>
 									<span class="image">
 										<img src="/images/carwash.jpg" alt="" />
@@ -294,22 +306,35 @@
 	</body>
 </html>
  <script>
-      function initMap() {
-        var uluru = {lat: 51.461283, lng: -1.010240};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          scrollwheel: false,
+      // function initMap() {
+      //   // var uluru = {lat: 51.461283, lng: -1.010240};
+      //   var map = new google.maps.Map(document.getElementById('google-maps'), {
+      //     zoom: 15,
+      //     scrollwheel: false,
 
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-          scrollwheel: false,
-        });
+      //     center: uluru
+      //   });
+      //   var marker = new google.maps.Marker({
+      //     position: uluru,
+      //     map: map,
+      //     scrollwheel: false,
+      //   });
 
 
-      }
+      // }
+
+//       function makeCasesClickable(){
+//   var cells = document.getElementsByTagName('td')
+//   for (var i = 0, cell; cell = cells[i]; i++){
+//     if (cell.className != 'case') continue
+//     var caseId = cell.innerHTML
+//     cell.innerHTML = ''
+//     var link = document.createElement('a')
+//     link.href = 'http://bugs.example.com/fogbugz/default.php?' + caseId
+//     link.appendChild(document.createTextNode(caseId))
+//     cell.appendChild(link)
+//   }
+// }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPhd_REu2CsNifXNeqeufkYcwI3MM6zJk&callback=initMap">
