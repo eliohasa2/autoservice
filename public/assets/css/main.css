@@ -3028,9 +3028,10 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
+		background-attachment: scroll,fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/ccwash.jpeg");
+		background-image: url("images/overlay.png"), url("../../images/logo.jpeg");
+		height: auto  ;
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3392,7 +3393,7 @@
 				z-index: 10001;
 			}
 */
-				#navButton .toggle {
+			/*	#navButton .toggle {
 					text-decoration: none;
 					height: 100%;
 					left: 0;
@@ -3426,7 +3427,7 @@
 						text-align: center;
 						top: 0.5em;
 						width: 3.5em;
-					}
+					}*/
 
 		/*	#navPanel {
 				-moz-backface-visibility: hidden;
@@ -3825,7 +3826,7 @@
     align-items: center;
     perspective-origin: 380.594px 260.656px;
     transform-origin: 380.594px 260.656px;
-    background: rgba(0, 0, 0, 0) url("/images/carwash.jpg") no-repeat scroll 50% 50% / cover padding-box border-box;
+    background: rgba(0, 0, 0, 0) url("/images/ccwash.jpeg") no-repeat scroll 50% 50% / cover padding-box border-box;
     border: 0px none rgb(255, 255, 255);
     font: normal normal 300 normal 22.6667px / 37.4px "Source Sans Pro", Helvetica, sans-serif;
     outline: rgb(255, 255, 255) none 0px;
@@ -6691,7 +6692,8 @@
 			}
 
 			.tiles article:nth-child(6n - 5):after {
-			    background: rgba(0, 0, 0, 0) url("/images/carwash.jpg") no-repeat scroll 50% 50% / cover padding-box border-box;
+			    background: rgba(0, 0, 0, 0) url("/images/ccwash.jpeg")
+			     no-repeat scroll 50% 50% / cover padding-box border-box;
 				/*content: '';*/
 				content: url('www.goolge.com');
 				display: block;
@@ -6776,7 +6778,7 @@
 @media (max-width: 640px) and (min-width: 320px){
   .image_full{
    display:none;
-   
+
   }
 
   .image_mobile{
@@ -6788,7 +6790,7 @@
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-						    background: rgba(0, 0, 0, 0) url("/images/carwash.jpg") no-repeat scroll 50% 50% / cover padding-box border-box;
+						    background: rgba(0, 0, 0, 0) url("/images/ccwash.jpeg") no-repeat scroll 50% 50% / cover padding-box border-box;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
