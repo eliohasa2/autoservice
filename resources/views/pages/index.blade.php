@@ -24,7 +24,7 @@
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,7 +36,7 @@
 
 <body class="landing">
 
-	<section id="banner">
+	<section id="banner" style="z-index:1">
 		<div class="col-md-3 col-md-offset-1" style="text-align:left;float:right;margin-top:-10%">
 			<ul style="color:black;list-style: none;color:white">
 				<li>Direct:+44 (0) 011-8959-0415</li>
@@ -45,12 +45,23 @@
 				<li>RG30 1EL</li>
 			</ul>
 		</div>
-		<div style="margin-top:22%">
+		<div style="z-index:inherit;margin-top:-10%;">
+  
+			<a href="#" class="button special"   data-toggle="modal" data-target="#myModal1">Auto Services</a>
+			<a href="#" class="button special"  data-toggle="modal" data-target="#myModal1">Find Your Auto</a>
+    	
+	
 
-			<a href="#" class="button special"  data-toggle="modal" data-target="#myModal1">Find Car</a>
-			<a href="#" class="button special"  data-toggle="modal" data-target="#myModal1">Tire Service</a>
+	</div>
 
-		</div>
+
+
+				<button class="button style2 scrolly-middle" style="margin-top:30%" id="scroll" >CarWash</button>
+
+
+
+
+
 
 		<div class="modal fade" id="myModal1" role="dialog"; >
 			<div class="modal-dialog">
@@ -61,6 +72,8 @@
 						<i class="fa fa-car" aria-hidden="true"></i>
 					</div>
 					<div class="modal-body">
+					<strong><h3 style="color:black">BROTHERS CAR SALES</h3></strong>
+
 						<div class="modal-body" style="display: flex;">
 
 							<div class="row">
@@ -117,8 +130,11 @@
 
 		<!-- Main -->
 		<section id="main" class="container">
+<section class="box special" id="here" style="margin-top:20%">
+				<p style="color:black">READING AUTOS HAND CAR WASH PROVIDES THE HIGHEST AND MOST PROFESSIONAL VALETING SERVICES. BEING VERY EXPERIENCED IN THIS INDUSTRY, WE HAVE WELL EXPERIENCED STAFF AND USE VEHICLE-FRIENDLY CHEMICALS TO VALET THE VEHICLES.</p>
 
-			<section class="box special" style="margin-top:20%">
+		</section>
+			<section class="box special" >
 				<iframe style="pointer-events: none;"
 				width="600"
 				height="450"
@@ -128,6 +144,9 @@
 			</iframe>
 
 		</section>
+
+
+
 		<section id="one" class="tiles">
 
 		<article  onclick="window.location='pages/carwash'">
@@ -177,7 +196,7 @@
 				</section>
 			-->
 			<!-- Footer -->
-			<footer style="background:lightgrey" class="page-footer center-on-small-only primary-color-dark">
+			<footer style="background:lightgrey;" class="page-footer center-on-small-only primary-color-dark">
 
 				<!--Footer Links-->
 				<div class="container-fluid">
@@ -259,11 +278,7 @@
 //     cell.appendChild(link)
 //   }
 // }
-doMyFunction(){
 
-alert('ásdsad');
-
-}
 
 
 </script>
@@ -276,3 +291,21 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPhd_REu2CsNifXNeqeufkYcw
 // document.location = 'pages/carwash';
 // }
 //
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86880036-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+$("#scroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#here").offset().top},
+        'slow');
+});
+</script>
