@@ -3031,7 +3031,8 @@
 		background-attachment: scroll,fixed;
 		background-color: #666;
 		background-image: url("images/overlay.png"), url("../../images/logo.jpeg");
-		height: auto  ;
+		height: 100% !important;
+		width: 100%;
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3242,6 +3243,7 @@
 
 			body, input, select, textarea {
 				font-size: 13pt;
+				height: 120%;
 			}
 
 		/* Banner */
@@ -3635,6 +3637,7 @@
 			body.landing #main {
 				padding: 0;
 				margin-top: 0;
+				height: 200%;	
 			}
 
 		/* Footer */
