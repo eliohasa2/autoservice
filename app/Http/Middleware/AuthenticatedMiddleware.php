@@ -17,11 +17,8 @@ class AuthenticatedMiddleware
     {
         if(Auth::check())
         return $next($request);
-    return redirect ('/login');
-     if(Auth::check())
-                return $next($request);
+    
+        return redirect ('/login');
 
-        return redirect('/register');
-        return view('auth.register');
     }
 }

@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+@if (count($errors)>0)
+  <ul>
+    @foreach ($errors->all() as $error )
+<li>{{ $error }}</li>
+@endforeach
+</ul>
+@endif
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container">
     <div class="row">
       
@@ -9,42 +22,189 @@
 
 <button onclick="location.href = '/register'" id="myButton" class="btn btn-success" >Register New Admin</button>
 
-<button type="button" class="btn btn-success">Insert</button>
-<button type="button" class="btn btn-danger">Update </button>
-<button type="button" class="btn btn-warning">Delete</button>
-  <table class="table">
+<button type="button"  data-toggle="modal" data-target="#myModal2" class="btn btn-success">Insert</button>
+
+
+<!-- Modal --><form action="/home" method="POST">
+  {{ csrf_field() }}
+
+<div class="modal fade"  id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Create</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="brand" class="form-control" placeholder="brand">
+        <input type="text" name="model" class="form-control" placeholder="model">
+        <textarea class="form-control" name="desc" rows="5" id="desc" placeholder="desc"></textarea>       
+        <input type="number" name="year" class="form-control" placeholder="year">
+        <input type="number" name="km" class="form-control" placeholder="km">
+        <input type="number" name="price" class="form-control" placeholder="price">
+<select name="fueltype">
+  <option value="diesel">Diesel</option>
+  <option value="gasoline">Gasoline</option>
+ 
+</select>    
+<div class="panel-body">
+
+      @if (count($errors) > 0)
+      <div class="alert alert-danger">
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+          @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+          @endforeach
+        </ul>
+      </div>
+    @endif
+
+    @if ($message = Session::get('success'))
+    <div class="alert alert-success alert-block">
+      <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>{{ $message }}</strong>
+    </div>
+    <img src="/images/{{ Session::get('path') }}">
+    @endif
+
+    <form action="{{ url('image-upload') }}" enctype="multipart/form-data" method="POST">
+      {{ csrf_field() }}
+      <div class="row">
+        <div class="col-md-12">
+          <input type="file" value="imagess" name="image" />
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-success">Upload</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Insert</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+
+
+<form  method="POST">
+  {{ csrf_field() }}
+
+<div class="modal fade"  id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Edit</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" name="brand" class="form-control"  placeholder="id">
+        <input type="text" name="brand" class="form-control"  placeholder="brand">
+        <input type="text" name="model" class="form-control"  placeholder="model">
+        <textarea class="form-control" name="desc" rows="5" id="desc" placeholder="desc"></textarea>       
+        <input type="hidden" name="_method" value="put">
+        <input type="number" name="year" class="form-control" placeholder="year">
+        <input type="number" name="km" class="form-control"  placeholder="km">
+        <input type="number" name="price" class="form-control"   placeholder="price">
+<select name="fueltype">
+  <option value="diesel">Diesel</option>
+  <option value="gasoline">Gasoline</option>
+ 
+</select>    
+  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit"  value="edit" class="btn btn-primary">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+
+<!-- @foreach ($cars as $car)
+<form class="" action="/home/{{$car->id}}" method="post">
+<input type="hidden" name="_method" value="delete">
+<input type="hidden" name="_token" value="{{ csrf_token()}}">
+<input type="submit" name="name" value="delete"> 
+  
+
+
+</form>
+@endforeach
+
+ -->
+<h2>Cars</h2>
+  <table class="table" id="example">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+      <th></th>
+      <th></th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>desc</th>
+        <th>year</th>
+        <th>price</th>
+        <th>km</th>
+        <th>fueltype</th>
+        <th>created_at</th>
+                <th>imagess</th>
+
+
       </tr>
     </thead>
     <tbody>
       <tr class="success">
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        @foreach ($cars as $car)
+
+      <tr class="success">
+      <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2" class="btn btn-success">Update</button>
+</td>
+      <td><form class="" class="btn"  action="/home/{{$car->id}}" method="post">
+<input type="hidden" name="_method" value="delete">
+<input type="hidden" name="_token" value="{{ csrf_token()}}">
+<input type="submit" name="name" value="delete"> 
+  
+
+
+</form>
+</td>
+        <td>{{$car->brand}}</td>
+        <td>{{$car->model}}</td>
+        <td>{{$car->desc}}</td>
+        <td>{{$car->year}}</td>
+        <td>{{$car->price}}</td>
+        <td>{{$car->km}}</td>
+        <td>{{$car->fueltype}}</td>
+        <td>{{$car->created_at}}</td>
+        <td>{{$car->images}}</td>
+
+
       </tr>
-      <tr class="danger">
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr class="info">
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+    </tbody>
+    @endforeach
       </tr>
     </tbody>
   </table>
+  {{ $cars->links() }}
 </div>
 
 
 <div class="container" style="margin-top:10px">
 <button type="button" class="btn btn-success">Insert</button>
 <button type="button" class="btn btn-danger">Update </button>
-<button type="button" class="btn btn-warning">Delete</button>
+
+<h2>Tires</h2>
   <table class="table">
     <thead>
       <tr>
@@ -53,25 +213,25 @@
         <th>Email</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody>@foreach ($cars as $car)
+
       <tr class="success">
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr class="danger">
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr class="info">
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+        <td>{{$car->brand}}</td>
+        <td>{{$car->model}}</td>
+        <td>{{$car->year}}</td>
       </tr>
     </tbody>
+    @endforeach
   </table>
 </div>
     </div>
 </div>
 @endsection
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#example').DataTable();
+} );
+
+</script>
