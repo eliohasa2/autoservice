@@ -8,7 +8,7 @@ $to      = 'eliohasa15@gmail.com';
 $subject = 'New Booking';
 $message = 'New Booking From: '.$fname . '<br>'. 'Date: '. $date .' Time: '. $time.' <br>'. 'Phone Number: '. $fnumber;
 
-// mail($to, $subject, $message);
+ mail($to, $subject, $message);
 echo "You Reservation is Booked <br>";
 
 ?>
