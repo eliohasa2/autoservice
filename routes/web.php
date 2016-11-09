@@ -18,6 +18,7 @@ Route::get('pages/modal',['uses'=>'AutoController@modal']);
 Route::get('pages/carwash',['uses'=>'AutoController@carwash']);
 Route::get('pages/tires',['uses'=>'AutoController@tires']);
 Route::get('pages/services',['uses'=>'AutoController@services']);
+Route::get('pages/sendMail',['uses'=>'AutoController@sendMail']);
 
 Auth::routes();
 
@@ -40,6 +41,5 @@ Route::resource('home','CarsController');
 });
 Route::get('/home',['uses'=>'CarsController@home'])->middleware('authenticated');
 //requests function name
-
-Route::get('image-upload','CarsController@imageUpload');
-Route::post('image-upload','CarsController@imageUploadPost');
+Route::get('pages/sendMail', 'AutoController@sendMail');
+Route::post('pages/sendMail', 'AutoController@sendMail');

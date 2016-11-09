@@ -52,8 +52,10 @@ class CarsController extends Controller
             'year'=>'required',
             'km'=>'required',
             'price'=>'required',
+            'imagesss'=>'required',
              ]);
 
+    
         $cars=new Cars;
         $cars->brand=$request->brand;
         $cars->model=$request->model;
@@ -62,6 +64,11 @@ class CarsController extends Controller
         $cars->km=$request->km;
         $cars->desc=$request->desc;
         $cars->price=$request->price;
+        $file = $request->file('imagesss');
+        $fileName =('C:/xampp/htdocs/auto/').$file->getClientOriginalName();
+        $request->file('imagesss')->move("images/",$fileName);
+        $cars->imagesss = $fileName;
+
         $cars->save();
         return redirect('/home');
 
@@ -164,5 +171,23 @@ class CarsController extends Controller
         //     ->with('success','Image Uploaded successfully.')
         //     ->with('path',$imageName);
     }
+    public function getContact(){
 
+ return view ('/');
+
+    }
+   public function postContact(){
+
+ $this->validate($request,[
+        'fnumber'->'required'
+    ]);
+
+Mail::send('view',$data,function(){
+
+
+
+
+    
+})
+    }
 }

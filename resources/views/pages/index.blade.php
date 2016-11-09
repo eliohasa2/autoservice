@@ -225,6 +225,22 @@
 
 
 						</div>
+							<div class="col-md-2 col-md-offset-1">
+							<form action="/pages/sendMail" method="POST">
+							  {{ csrf_field() }}
+
+							<h5 style="color:black" class="title">Book</h5>
+
+					<input type="text" style="background:black;color:white;" id="fname" name="fname" placeholder="Full Name" class="form-control" name="Full Name">
+					<input type="text" style="background:black;color:white;" id="fnumber" name="fnumber" placeholder="Phone Number" class="form-control" name="Phone Number">
+					<input type="date" style="background:black;color:white;"  id="date" name="date" class="form-control" name="Date">
+					<input type="time" style="background:black;color:white;" id="time" name="time" class="form-control" name="Date">
+
+    <input type="submit" id="button" value="Send" />
+   <!--  <input type="hidden" name="button_pressed" value="1" /> -->
+</form>
+
+						</div>
 						<!--/.Second column-->
 
 						<hr class="hidden-md-up">
@@ -308,4 +324,11 @@ $("#scroll").click(function() {
         scrollTop: $("#here").offset().top},
         'slow');
 });
+</script>
+<script type="text/javascript">
+	
+	$('.button').click(function() {
+alert('adasd');
+
+    });
 </script>

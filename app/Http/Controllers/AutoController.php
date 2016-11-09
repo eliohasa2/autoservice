@@ -37,4 +37,10 @@ class AutoController extends Controller
     {
  	return view('pages.cars');
  }
+public function sendMail()
+    {
+  return view('pages.sendMail');
+ }
+
+
 }
