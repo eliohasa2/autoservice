@@ -86,7 +86,7 @@
 			<div class="row">
 			@foreach ($cars as $car)
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="{{$car->imagesss}}" class="fh5co-project-item image-popup">
+					<a href="{{Storage::url($car->imagesss)}}" class="fh5co-project-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="{{Storage::url($car->imagesss)}}" alt="Image" class="img-responsive">
