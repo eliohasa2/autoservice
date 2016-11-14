@@ -37,26 +37,25 @@
 <body class="landing">
 
 	<section id="banner" style="z-index:1">
-		<div class="col-md-3 col-md-offset-1" style="text-align:left;float:right;margin-top:-10%">
-			<ul style="color:black;list-style: none;color:white">
-				<li>Direct:+44 (0) 011-8959-0415</li>
-				<li>Mobile:+44 (0) 074-9505-6667</li>
-				<li>782-784 Oxford Road</li>
-				<li>RG30 1EL</li>
-			</ul>
-		</div>
+			<!-- <div class="col-md-3 col-md-offset-1" style="text-align:left;float:right;margin-top:-10%">
+				<ul style="color:black;list-style: none;color:white">
+					<li>Direct:+44 (0) 011-8959-0415</li>
+					<li>Mobile:+44 (0) 074-9505-6667</li>
+					<li>782-784 Oxford Road</li>
+					<li>RG30 1EL</li>
+				</ul>
+			</div> -->
 		<div style="z-index:inherit;margin-top:-10%;">
   
-			<a href="#" class="button special"   data-toggle="modal" data-target="#myModal1">Auto Services</a>
-			<a href="#" class="button special"  data-toggle="modal" data-target="#myModal1">Find Your Auto</a>
+			<a href="#" class="button special"  onclick="window.location='pages/services'">Auto Services</a>
+			<a href="#" class="button special"  onclick="window.location='pages/cars'">Find Your Auto</a>
     	
 	
 
 	</div>
 
 
-
-				<button class="button style2 scrolly-middle" style="margin-top:30%" id="scroll" >CarWash</button>
+<button class="button special" style="margin-top:30%"   onclick="location.href='/pages/sendMail'" >CarWash</button>
 
 
 
@@ -129,32 +128,26 @@
 		</section>
 
 		<!-- Main -->
-		<section id="main" class="container">
-<section class="box special" id="here" style="margin-top:20%">
-				<p style="color:black">READING AUTOS HAND CAR WASH PROVIDES THE HIGHEST AND MOST PROFESSIONAL VALETING SERVICES. BEING VERY EXPERIENCED IN THIS INDUSTRY, WE HAVE WELL EXPERIENCED STAFF AND USE VEHICLE-FRIENDLY CHEMICALS TO VALET THE VEHICLES.</p>
+		<section id="main"  class="container">
+<section class="box special" id="here" style="margin-top:10%;width:40%;margin-left:30%">
+				<p style="color:black">Direct:+44 (0) 011-8959-0415 <br> Mobile:+44 (0) 074-9505-6667<br>782-784 Oxford Road<br> RG30 1EL </p>
 
 		</section>
-			<section class="box special" >
-				<iframe style="pointer-events: none;"
-				width="600"
-				height="450"
-				frameborder="0" style="border:0"
-				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmOaOgmNdNp7bcVGJfoO6Jwqw18UqiqA0
-				&q=782-784+Oxford+Rd,+Reading+RG30+1EL,+UK/@51.4613007,-1.0125581,17z" allowfullscreen>
-			</iframe>
-
-		</section>
-
+		
+<!-- <li>Direct:+44 (0) 011-8959-0415</li>
+				<li>Mobile:+44 (0) 074-9505-6667</li>
+				<li>782-784 Oxford Road</li>
+				<li>RG30 1EL</li> -->
 
 
 		<section id="one" class="tiles">
 
-		<article  onclick="window.location='pages/carwash'">
+		<article  onclick="window.location='pages/sendMail'">
 
 			
 			</article>
 
-			<article onclick="window.location='pages/tires'">
+			<article onclick="window.location='pages/services'">
 
 			
 			</article>
@@ -171,7 +164,16 @@
 
 		</section>
 
+	<section class="box special" >
+				<iframe style="pointer-events: none;"
+				width="600"
+				height="450"
+				frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCmOaOgmNdNp7bcVGJfoO6Jwqw18UqiqA0
+				&q=782-784+Oxford+Rd,+Reading+RG30+1EL,+UK/@51.4613007,-1.0125581,17z" allowfullscreen>
+			</iframe>
 
+		</section>
 
 
 	</section>
@@ -217,29 +219,15 @@
 
 						<!--Second column-->
 						<div class="col-md-2 col-md-offset-1">
-							<h5 style="color:black" class="title">Like Us</h5>
+							
+
+						</div>
+							<div class="col-md-2 col-md-offset-1">
+					<h5 style="color:black" class="title">Like Us</h5>
 
 							<button type="button" style="color:black;width:100%" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
 							<button type="button" style="color:black;width:100%" class="btn btn-ins"><i class="fa fa-instagram left"></i> Instagram</button>
 							<button type="button" style="color:black;width:100%" class="btn btn-tw"><i class="fa fa-twitter left"></i> Twitter</button>
-
-
-						</div>
-							<div class="col-md-2 col-md-offset-1">
-							<form action="/pages/sendMail" method="POST">
-							  {{ csrf_field() }}
-
-							<h5 style="color:black" class="title">Book</h5>
-
-					<input type="text" style="background:black;color:white;" id="fname" name="fname" placeholder="Full Name" class="form-control" name="Full Name">
-					<input type="text" style="background:black;color:white;" id="fnumber" name="fnumber" placeholder="Phone Number" class="form-control" name="Phone Number">
-					<input type="date" style="background:black;color:white;"  id="date" name="date" class="form-control" name="Date">
-					<input type="time" style="background:black;color:white;" id="time" name="time" class="form-control" name="Date">
-
-    <input type="submit" id="button" value="Send" />
-   <!--  <input type="hidden" name="button_pressed" value="1" /> -->
-</form>
-
 						</div>
 						<!--/.Second column-->
 
@@ -327,8 +315,5 @@ $("#scroll").click(function() {
 </script>
 <script type="text/javascript">
 	
-	$('.button').click(function() {
-alert('adasd');
 
-    });
 </script>

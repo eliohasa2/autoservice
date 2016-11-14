@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cars;
+use App\Tires;
+
 class CarsController extends Controller
 {
     /**
@@ -11,12 +13,13 @@ class CarsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function home()
+    public function home()  
     {
         $cars= Cars::paginate(2); 
+        $tires=Tires::paginate(2);
         // return view('pages.cars',['cars'=> $cars]);
 
-        return view('/home',['cars'=> $cars]);
+        return view('/home')->with('cars',$cars)->with('tires',$tires);
     }
 
    public function cars()
@@ -44,15 +47,21 @@ class CarsController extends Controller
      */
     public function store(Request $request)
     {
-    
-        $this->validate($request,[
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //something posted
+
+
+
+    if (isset($_POST['cars'])) {
+           $this->validate($request,[
             'brand'=>'required',
             'model'=>'required',
             'desc'=>'required',
             'year'=>'required',
             'km'=>'required',
             'price'=>'required',
-            'imagesss'=>'required',
+            // 'imagesss'=>'required',
              ]);
 
     
@@ -64,15 +73,47 @@ class CarsController extends Controller
         $cars->km=$request->km;
         $cars->desc=$request->desc;
         $cars->price=$request->price;
-        $file = $request->file('imagesss');
-        $fileName =('C:/xampp/htdocs/auto/').$file->getClientOriginalName();
-        $request->file('imagesss')->move("images/",$fileName);
-        $cars->imagesss = $fileName;
+
+        if ($request->file('imagesss')->isValid()) {
+            $cars->imagesss = $request->imagesss->storeAs('images', uniqid().'.jpg', 'public');
+        }
 
         $cars->save();
         return redirect('/home');
 
 
+
+    } else {
+       $this->validate($request,[
+            'brand'=>'required',
+            'model'=>'required',
+            'desc'=>'required',
+            'year'=>'required',
+            'price'=>'required',
+        
+            // 'imagesss'=>'required',
+             ]);
+
+    
+        $tires=new Tires;
+        $tires->brand=$request->brand;
+        $tires->model=$request->model;
+        $tires->year=$request->year;
+        $tires->desc=$request->desc;
+        $tires->price=$request->price;
+        if ($request->file('imagesss')->isValid()) {
+            $tires->imagesss = $request->imagesss->storeAs('images', uniqid().'.jpg', 'public');
+        }
+
+        $tires->save();
+        return redirect('/home');
+    }
+}
+    
+     
+
+
+ 
     }
 
     /**
@@ -94,11 +135,17 @@ class CarsController extends Controller
      */
     public function edit($id)
     {
-             $cars=Cars::find($id);
-             if(!cars){
-                    abort(404);
-             }
-             return view ('/home')->within('cars',$cars);
+             $car=Cars::find($id);
+
+             return view('cars.edit')->with(['car' => $car]);
+    }
+
+
+    public function tiresEdit($id)
+    {
+             $car=Tires::find($id);
+
+             return view('tires.edit')->with(['car' => $car]);
     }
 
     /**
@@ -127,7 +174,36 @@ class CarsController extends Controller
         $cars->km=$request->km;
         $cars->desc=$request->desc;
         $cars->price=$request->price;
-         $cars->images=$request->images;
+         if ($request->file('imagesss')) {
+            $cars->imagesss = $request->imagesss->storeAs('images', uniqid().'.jpg', 'public');
+        }
+        $cars->save();
+        return redirect('/home');
+
+
+    }
+
+
+
+    public function tiresUpdate(Request $request, $id)
+    {
+         $this->validate($request,[
+            'brand'=>'required',
+            'model'=>'required',
+            'desc'=>'required',
+            'year'=>'required',
+            'price'=>'required',
+             ]);
+
+        $cars=Tires::find($id);
+        $cars->brand=$request->brand;
+        $cars->model=$request->model;
+        $cars->year=$request->year;
+        $cars->desc=$request->desc;
+        $cars->price=$request->price;
+         if ($request->file('imagesss')) {
+            $cars->imagesss = $request->imagesss->storeAs('images', uniqid().'.jpg', 'public');
+        }
         $cars->save();
         return redirect('/home');
 
@@ -142,52 +218,28 @@ class CarsController extends Controller
      */
     public function destroy($id)
     {
+
+   if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    //something posted
+
+    if (isset($_POST['delCar'])) {
+        
        $car=Cars::findOrFail($id);
        $car->delete();
        return redirect('/home');
-    }
-
-
-  public function imageUpload()
-    {
-        return view('image-upload');
-    }
-
-    /**
-    * Manage Post Request
-    *
-    * @return void
-    */
-    public function imageUploadPost(Request $request)
-    {
-        $this->validate($request, [
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-
-        $imageName = time().'.'.$request->image->getClientOriginalExtension();
-        $request->image->move(public_path('images'), $imageName);
-
-        // return back()
-        //     ->with('success','Image Uploaded successfully.')
-        //     ->with('path',$imageName);
-    }
-    public function getContact(){
-
- return view ('/');
-
-    }
-   public function postContact(){
-
- $this->validate($request,[
-        'fnumber'->'required'
-    ]);
-
-Mail::send('view',$data,function(){
 
 
 
+    } else {
 
-    
-})
+       $tire=Tires::findOrFail($id);
+       $tire->delete();
+       return redirect('/home');
+      
     }
 }
+    
+
+}
+    }
+

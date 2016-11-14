@@ -19,6 +19,8 @@ class AuthenticatedMiddleware
         return $next($request);
     
         return redirect ('/login');
+        
+
 
     }
 }
