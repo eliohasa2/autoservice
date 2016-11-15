@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Overflow by HTML5 UP</title>
+		<title>Our Services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -14,7 +14,14 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=223343681330782";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -34,8 +41,11 @@
 					<h2>BROTHERS CARS SALES</h2>
 				</header>
 				<p>
-					A car dealership based in Reading that specialise in new and second hand vehicles.<br>
-					We make sure that we thrive in making sure that the second hand cars are checked, making sure that when they <br> are sold to the customer there is assurance that the wehicle is in great condition. We aim to make sure our level of customer service <br>is provided with high quality and giving the customer assurance with the cars they purchase by providing test drives.
+					A car dealership based in Reading that is specialized in new and second hand vehicles.
+We guarantee you will get the best services: we fully check the second hand cars are in order to make sure that the customer invests on a product with very good conditions. 
+We aim to make our customers happy and satisfied! High quality service and real test drive; we provid test drives to assure the customers are purchasing the best product.  
+We always work hard to ensure we offer value for money for our consumers!
+
 
 				</p>
 				<footer>
@@ -50,7 +60,7 @@
 					<header>
 						<h2>READING AUTO SERVICES MECHANICS</h2>
 					</header>
-					<p>Our mechanic place is here to offer professional mechanical work done to your car. We specialise in VOLKSWAGEN, AUDI, BMW, MERCEDES, SKODA, and SEAT. We provide general services which can vary from &pound;60-&pound;140 getting the best reliable service to your car.</p>
+					<p>Our mechanic area offers professional mechanical work done to your car. We are specialized in VOLKSWAGEN, AUDI, BMW, MERCEDES, SKODA, and SEAT. Our services vary from £60-£140, guaranteeing the best and most reliable service to your car.</p>
 				</div>
 			</article>
 
@@ -61,7 +71,7 @@
 					<header>
 						<h2>TYRES</h2>
 					</header>
-					<p>We provide brand new tyres and second hand tyres. We sell top branded tyres such as MICHELLIN, PIRELLI. We make sure that we have the cheapest range of second hand tyre on prices you can not compare with anywhere in Reading!</p>
+					<p>We provide brand new and second hand tires. We sell the top branded tires, such as MICHELIN, PIRELLI, etc. We make sure that we provide the best conditions of second handed tires at the best price range, prices you can not compare with anywhere in Reading!</p>
 				</div>
 			</article>
 
@@ -71,7 +81,7 @@
 					<header>
 						<h2>BODY PAINT WORK</h2>
 					</header>
-					<p>We provide proffessional spray body work dealing with any dents or scratches on your vehicle working with insurancers to deal with accident repairs</p>
+					<p>We provide professional spray body work, dealing with any dents or scratches on your vehicle, working with insurances to deal with accident repairs.</p>
 				</div>
 			</article>
 
@@ -81,11 +91,16 @@
 					<header>
 						<h2>CARWASH</h2>
 					</header>
-					<p>READING AUTOS HAND CAR WASH provides the highest and most professional valeting services. Being very experienced in this industry we have well experiences staff as well as our vehicle friendly chemicals we use to valet the vehicles. We have many different types of services which include:</p>
+					<p>READING AUTOS HAND CAR WASH provides the highest and most professional valeting services. Being very experienced in this industry we not only have well experiences staff, but we use vehicle-friendly chemicals to valet the vehicles as well. </p>
 				</div>
 			</article>
 
-
+<article class="container box style1 left">
+				
+						<p><h3 style="text-align:center">We offer several types of services, such as:</h3></p>
+					
+					
+			</article>
 		
 
 		<!-- Portfolio -->
@@ -107,7 +122,7 @@
 								<tr >
 									
 									<th >Name</th>
-									<th >Description</th>
+									<th style="text-align:center" >Description</th>
 									<th>Price Cars</th>
 									<th>Price 4X4 MPVS</th>
 
@@ -165,6 +180,7 @@
 								</tr>
 							</tfoot>
 						</table>
+						<div style="margin-left:30%" class="fb-comments" data-href="https://www.facebook.com/Reading-Auto-Services-1245963262140371/?fref=ts" data-width="400" data-numposts="5"></div>
 					</div>
 				</section>
 				<section>

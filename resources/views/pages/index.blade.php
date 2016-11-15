@@ -130,7 +130,7 @@
 		<!-- Main -->
 		<section id="main"  class="container">
 <section class="box special" id="here" style="margin-top:10%;width:40%;margin-left:30%">
-				<p style="color:black">Direct:+44 (0) 011-8959-0415 <br> Mobile:+44 (0) 074-9505-6667<br>782-784 Oxford Road<br> RG30 1EL </p>
+				<p style="color:black">Direct: +44 (0) 011-8959-0415 <br> Mobile: +44 (0) 074-9505-6667<br>782-784 Oxford Road<br> RG30 1EL </p>
 
 		</section>
 		

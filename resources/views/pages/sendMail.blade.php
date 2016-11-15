@@ -56,7 +56,7 @@
             </div>
              <div class="col-md-12">
                 <div class="form-group">
-                    <label for="form_message">Date *</label>
+                    <label for="form_message">Time *</label>
                                                 <input id="time" type="time" name="time" class="form-control" required="required" placeholder="Time">
 
                     <div class="help-block with-errors"></div>
