@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Splash &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+	<title>Cars</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -79,8 +79,8 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Beautiful Cars</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Our Cars</h2>
+					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
 			<div class="row">
@@ -92,9 +92,13 @@
 							<img src="{{Storage::url($car->imagesss)}}" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>{{$car->brand}}</h2>
-							<p>{{$car->model}}</p>
-							<p></p>	
+							<h2>Brand: {{$car->brand}}</h2>
+							<p style="margin:0;text-align:left">Model: {{$car->model}}</p>
+							<p style="margin:0;text-align:left">Description: {{$car->desc}}</p>
+							<p style="margin:0;text-align:left">Year: {{$car->year}}</p>
+							<p style="margin:0;text-align:left">Price: {{$car->price}}</p>
+							<p style="margin:0;text-align:left">Miles: {{$car->km}}</p>
+							<p style="margin:0;text-align:left">Fuel Type: {{$car->fueltype}}</p>	
 
 						</div>
 					</a>

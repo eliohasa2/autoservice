@@ -14,14 +14,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=223343681330782";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -180,12 +173,15 @@ We always work hard to ensure we offer value for money for our consumers!
 								</tr>
 							</tfoot>
 						</table>
-						<div style="margin-left:30%" class="fb-comments" data-href="https://www.facebook.com/Reading-Auto-Services-1245963262140371/?fref=ts" data-width="400" data-numposts="5"></div>
+						
 					</div>
+
 				</section>
 				<section>
 			
-				</section>
+				</section> 
+				<button class="button special"  onclick="location.href='/pages/sendMail'" >Make Reservation</button>
+
 			</article>
 		
 

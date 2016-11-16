@@ -56,3 +56,4 @@ Route::get('/home',['uses'=>'CarsController@home'])->middleware('authenticated')
 
 Route::get('pages/sendMail',['uses'=>'AutoController@sendMail']);
 Route::post('pages/sendMail',['uses'=>'AutoController@postMail']);
+

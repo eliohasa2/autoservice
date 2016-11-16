@@ -55,6 +55,7 @@ public function sendMail()
 // echo 'hi';exit;
 
 $data=array(
+  'type'=>$request->type,
 'fname'=>$request->fname,
 'fnumber'=>$request->fnumber,
 'date'=>$request->date,
@@ -65,8 +66,9 @@ $data=array(
 // 
 Mail::send('pages.emails',$data,function($messagee) use ($data){
 $messagee->from('NewReservation@readingautoservices.com');
-$messagee->to('eliohasa15@gmail.com');
-$messagee->subject('New Booking');
+$messagee->to('Readingautoservices1@gmail.com');
+
+$messagee->subject('New Reservation');
 
  });
 return redirect('/');
@@ -74,3 +76,4 @@ return redirect('/');
 }
 
 }
+ // arsimbraha@hotmail.com

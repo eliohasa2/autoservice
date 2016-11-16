@@ -2,6 +2,7 @@
 
 <div>
 	You have a new reservation from: {{$fname}}<br>
+	Type:{{$type}}<br>
 	Phone Number: {{$fnumber}} <br>
 	Date: {{$date}} <br>
 	Time: {{$time}} <br>

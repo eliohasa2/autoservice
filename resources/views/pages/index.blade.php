@@ -34,7 +34,6 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
-<body class="landing">
 
 	<section id="banner" style="z-index:1">
 			<!-- <div class="col-md-3 col-md-offset-1" style="text-align:left;float:right;margin-top:-10%">
@@ -225,7 +224,7 @@
 							<div class="col-md-2 col-md-offset-1">
 					<h5 style="color:black" class="title">Like Us</h5>
 
-							<button type="button" style="color:black;width:100%" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
+							<button type="button" style="color:black;width:100%"  onclick="location.href='https://www.facebook.com/readingautoservices/?fref=ts'" target='_blank' class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
 							<button type="button" style="color:black;width:100%" class="btn btn-ins"><i class="fa fa-instagram left"></i> Instagram</button>
 							<button type="button" style="color:black;width:100%" class="btn btn-tw"><i class="fa fa-twitter left"></i> Twitter</button>
 						</div>

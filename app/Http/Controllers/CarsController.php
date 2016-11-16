@@ -15,7 +15,7 @@ class CarsController extends Controller
      */
     public function home()  
     {
-        $cars= Cars::paginate(2); 
+        $cars= Cars::paginate(10); 
         $tires=Tires::paginate(2);
         // return view('pages.cars',['cars'=> $cars]);
 

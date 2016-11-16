@@ -9,22 +9,173 @@
         <link href='custom.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
-
+<body class="landing">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=223343681330782";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <div class="container">
 
             <div class="row">
 
-                <div class="col-lg-8 col-lg-offset-2">
+                <div >
+<table class="table" style="width:50%;float:left;" >
+                            <thead ">
+                                <tr  class="success">
+                                    
+                                    <th  >Name</th>
+                                    <th style="text-align:center" >Carwash Services Description</th>
+                                    <th>Price Cars</th>
+                                    <th>Price 4X4 MPVS</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="success" >
+                                    
+                                    <td >BLUE SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
+                                    <td>&pound;5.99</td>
+                                    <td>&pound;8.99</td>
+                                </tr>
+                                <tr class="success" >
+                                    
+                                    <td>BLUE EXTRA</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
+                                    <td>&pound;6.99</td>
+                                    <td>&pound;9.99</td>
+                                </tr>
+                                <tr class="success" >
+                                    
+                                    <td>RED SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
+                                    <td>&pound;9.99</td>
+                                    <td>&pound;14.99</td>
+                                </tr>
+                                <tr class="success">
+                                    
+                                    <td>SILVER SERVICE</td>
+                                    <td>Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
+                                    <td>&pound;14.99</td>
+                                    <td>&pound;19.99</td>
+                                </tr>
+
+                                <tr class="success" >
+                                    
+                                    <td>GOLD SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish;Foam Clean Seats ;Air Freshner.</td>
+                                    <td>&pound;19.99</td>
+                                    <td>&pound;24.99</td>
+                                </tr>
+                                    <tr class="success" >
+                                    
+                                    <td>FULL VALET</td>
+                                    <td>Car FULLY Washed</td>
+                                    <td>&pound;50</td>
+                                    <td>&pound;50</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                        <table class="table" style="width:50%" >
+                            <thead ">
+                                <tr class="info">   
+                                    
+                                    <th >Name</th>
+                                    <th style="text-align:center" >Auto Services Description</th>
+                                    <th>Price Cars</th>
+                                    <th>Price 4X4 MPVS</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info" >
+                                    
+                                    <td >BLUE SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
+                                    <td>&pound;5.99</td>
+                                    <td>&pound;8.99</td>
+                                </tr>
+                                <tr class="info" >
+                                    
+                                    <td>BLUE EXTRA</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
+                                    <td>&pound;6.99</td>
+                                    <td>&pound;9.99</td>
+                                </tr>
+                                <tr class="info" >
+                                    
+                                    <td>RED SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
+                                    <td>&pound;9.99</td>
+                                    <td>&pound;14.99</td>
+                                </tr>
+                                <tr class="info" >
+                                    
+                                    <td>SILVER SERVICE</td>
+                                    <td>Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
+                                    <td>&pound;14.99</td>
+                                    <td>&pound;19.99</td>
+                                </tr>
+
+                                <tr class="info" >
+                                    
+                                    <td>GOLD SERVICE</td>
+                                    <td>Clean Alloys; Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish;Foam Clean Seats ;Air Freshner.</td>
+                                    <td>&pound;19.99</td>
+                                    <td>&pound;24.99</td>
+                                </tr>
+                                    <tr class="info" >
+                                    
+                                    <td>FULL VALET</td>
+                                    <td>Car FULLY Washed</td>
+                                    <td>&pound;50</td>
+                                    <td>&pound;50</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3"></td>
+                                    
+                                </tr>
+                            </tfoot>
+                        </table>
+
 
                     <h1>Make a Reservation </h1>
 
 
-                  <form id="contact-form" action="{{url('pages/sendMail')}}" method="POST" role="form">
+                  <form  style="width:100%;display:flex" id="contact-form" action="{{url('pages/sendMail')}}" method="POST" role="form">
 	  {{ csrf_field() }}
     <div class="messages"></div>
 
-    <div class="controls">
+    <div class="controls" >
 
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Type*</label><br>
+                    <select class="btn btn-default dropdown-toggle" id="type" name="type">
+                    <option value=""></option>
+              <option value="Full Valet">Full Valet</option>
+              <option value="Full Reservation">Full Service</option>
+
+              </select> 
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+       
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -67,17 +218,15 @@
                 <input type="submit" class="btn btn-success btn-send" onclick="location.href='/';" required="required" value="Go Back">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-           </div>
-        </div>
+        
     </div>
-
+<div    class="fb-comments" data-href="https://www.facebook.com/Reading-Auto-Services-1245963262140371/?fref=ts" data-width="650" data-numposts="5"></div>
 </form>
 
                 </div>
 
             </div>
+         
 
         </div>
 

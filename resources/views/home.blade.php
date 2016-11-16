@@ -250,10 +250,10 @@
   </div>
 </form>
 
-<h2>Tires</h2>
-  <button type="button"  data-toggle="modal" name="tires" data-target="#myModal5" class="btn btn-success">Insert</button>
-
-<table class="table" id="example">
+<!-- <h2>Tires</h2> -->
+  <!-- <button type="button"  data-toggle="modal" name="tires" data-target="#myModal5" class="btn btn-success">Insert</button> -->
+<!--  -->
+<!-- <table class="table" id="example">
   <thead>
     <tr>
       <th></th>
@@ -264,7 +264,7 @@
       <th>year</th>
       <th>price</th>
       <!-- <th>created_at</th> -->
-      <th>imagess</th>
+      <!-- <th>imagess</th> -->
 
 
     </tr>
@@ -273,26 +273,25 @@
     <tr class="success">
       @foreach ($tires as $tire)
 
-      <tr class="success">
+     <!--  <tr class="success">
         <td><a type="button" class="btn btn-danger" href="{{route('home.tires.edit', $tire)}}" class="btn btn-success">Update</a>
-        </td>
-        <td><form class="" class="btn"  action="/home/{{$tire->id}}" method="post">
+        </td> -->
+   <!--      <td><form class="" class="btn"  action="/home/{{$tire->id}}" method="post">
           <input type="hidden" name="_method" value="delete">
           <input type="hidden" name="_token" value="{{ csrf_token()}}">
           <input type="submit" name="delTire" value="delete"> 
 
 
 
-        </form>
-      </td>
+        </form> -->
+     <!--  </td>
       <td>{{$tire->brand}}</td>
       <td>{{$tire->model}}</td>
       <td>{{$tire->desc}}</td>
       <td>{{$tire->year}}</td>
       <td>{{$tire->price}}</td>
-      <!-- <td>{{$tire->created_at}}</td> -->
-            <td><img src="{{Storage::url($car->imagesss)}}" width="30px" alt="Image" class="img-responsive"></td>
-
+      <!-- <td>{{$tire->created_at}}</td> -
+            <!-- <td><img src="{{Storage::url($car->imagesss)}}" width="30px" alt="Image" class="img-responsive"></td> --> 
 
     </tr>
   </tbody>
@@ -300,7 +299,7 @@
 </tr>
 </tbody>
 </table>
-{{ $tires->links() }}
+<!-- {{ $tires->links() }} -->
 </div>
 </div>
 </div>
