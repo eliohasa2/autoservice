@@ -47,7 +47,7 @@
 		<div style="z-index:inherit;margin-top:-10%;">
   
 			<a href="#" class="button special"  onclick="window.location='pages/services'">Auto Services</a>
-			<a href="#" class="button special"  onclick="window.location='pages/cars'">Find Your Auto</a>
+			<a href="#" class="button special"  onclick="window.location='pages/cars'">Find Your Car</a>
     	
 	
 

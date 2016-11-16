@@ -162,8 +162,8 @@ We always work hard to ensure we offer value for money for our consumers!
 									
 									<td>FULL VALET</td>
 									<td>Car FULLY Washed</td>
-									<td>&pound;50</td>
-									<td>&pound;50</td>
+									<td>Starting from &pound;50</td>
+									<td>Starting from &pound;50</td>
 								</tr>
 							</tbody>
 							<tfoot>

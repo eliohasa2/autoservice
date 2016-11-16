@@ -20,15 +20,8 @@
             <form method="POST" action="{{route('home.cars.update', $car)}}"  enctype="multipart/form-data">
             {{csrf_field()}}
 
-              <select name="brand">
-                <option value="Alfa Romeo" @if ($car->brand == 'Alfa Romeo') selected="selected" @endif >Alfa Romeo</option>
-                <option value="Audi" @if ($car->brand == 'Audi') selected="selected" @endif>Audi</option>
-                <option value="BMW" @if ($car->brand == 'BMW') selected="selected" @endif>BMW</option>
-                <option value="Fiat" @if ($car->brand == 'Fiat') selected="selected" @endif>Fiat</option>
-                <option value="Ford" @if ($car->brand == 'Ford') selected="selected" @endif>Ford</option>
-                <option value="Mercedes" @if ($car->brand == 'Mercedes') selected="selected" @endif>Mercedes-Benz</option>
-                <option value="Volkswagen" @if ($car->brand == 'Volkswagen') selected="selected" @endif>Volkswagen</option>
-              </select> 
+                           <input type="text" name="brand"  value="{{$car->brand}}" class="form-control" placeholder="brand">
+
               <input type="text" name="model"  value="{{$car->model}}" class="form-control" placeholder="model">
               <textarea class="form-control"  name="desc" rows="5" id="desc" placeholder="desc">{{$car->desc}}</textarea>       
               <input type="number" name="year" value="{{$car->year}}" class="form-control" placeholder="year">

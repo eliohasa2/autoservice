@@ -22,10 +22,10 @@
 
             <div class="row">
 
-                <div >
-<table class="table" style="width:50%;float:left;" >
+                <div style="height: 40px;">
+<table class="table table-striped" style="width:50%;float:left;" >
                             <thead ">
-                                <tr  class="success">
+                                <tr  class="success" style="font-size: 15px;font-family: Times">
                                     
                                     <th  >Name</th>
                                     <th style="text-align:center" >Carwash Services Description</th>
@@ -35,43 +35,43 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="success" >
+                                <tr class="success" style="font-family: Times;font-size: 13px">
                                     
                                     <td >BLUE SERVICE</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
-                                    <td>&pound;5.99</td>
-                                    <td>&pound;8.99</td>
+                                    <td >Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
+                                    <td >&pound;5.99</td>
+                                    <td >&pound;8.99</td>
                                 </tr>
-                                <tr class="success" >
+                                <tr class="success" style="font-family: Times;font-size: 13px">
                                     
-                                    <td>BLUE EXTRA</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
-                                    <td>&pound;6.99</td>
-                                    <td>&pound;9.99</td>
+                                    <td >BLUE EXTRA</td>
+                                    <td >Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
+                                    <td >&pound;6.99</td>
+                                    <td >&pound;9.99</td>
                                 </tr>
-                                <tr class="success" >
+                                <tr class="success" style="font-family: Times;font-size: 13px">
                                     
-                                    <td>RED SERVICE</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
-                                    <td>&pound;9.99</td>
-                                    <td>&pound;14.99</td>
+                                    <td >RED SERVICE</td>
+                                    <td >Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
+                                    <td >&pound;9.99</td>
+                                    <td  >&pound;14.99</td>
                                 </tr>
-                                <tr class="success">
+                                <tr class="success" style="font-family: Times;font-size: 13px">
                                     
-                                    <td>SILVER SERVICE</td>
-                                    <td>Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
-                                    <td>&pound;14.99</td>
-                                    <td>&pound;19.99</td>
+                                    <td >SILVER SERVICE</td>
+                                    <td >Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
+                                    <td >&pound;14.99</td>
+                                    <td >&pound;19.99</td>
                                 </tr>
 
-                                <tr class="success" >
+                                <tr class="success" style="font-size: 13px ;font-family: Times">
                                     
                                     <td>GOLD SERVICE</td>
                                     <td>Clean Alloys; Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish;Foam Clean Seats ;Air Freshner.</td>
                                     <td>&pound;19.99</td>
                                     <td>&pound;24.99</td>
                                 </tr>
-                                    <tr class="success" >
+                                    <tr class="success"  style="font-size: 13px;font-family: Times">
                                     
                                     <td>FULL VALET</td>
                                     <td>Car FULLY Washed</td>
@@ -89,7 +89,7 @@
 
                         <table class="table" style="width:50%" >
                             <thead ">
-                                <tr class="info">   
+                                <tr class="info" style="font-size: 14px;font-family: Times">   
                                     
                                     <th >Name</th>
                                     <th style="text-align:center" >Auto Services Description</th>
@@ -99,28 +99,28 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="info" >
+                                <tr class="info" style="font-size: 13px;font-family: Times">
                                     
                                     <td >BLUE SERVICE</td>
                                     <td>Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
                                     <td>&pound;5.99</td>
                                     <td>&pound;8.99</td>
                                 </tr>
-                                <tr class="info" >
+                                <tr class="info" style="font-size: 13px;font-family: Times" >
                                     
                                     <td>BLUE EXTRA</td>
                                     <td>Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
                                     <td>&pound;6.99</td>
                                     <td>&pound;9.99</td>
                                 </tr>
-                                <tr class="info" >
+                                <tr class="info" style="font-size: 13px;font-family: Times" >
                                     
                                     <td>RED SERVICE</td>
                                     <td>Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
                                     <td>&pound;9.99</td>
                                     <td>&pound;14.99</td>
                                 </tr>
-                                <tr class="info" >
+                                <tr class="info" style="font-size: 13px;font-family: Times">
                                     
                                     <td>SILVER SERVICE</td>
                                     <td>Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
@@ -128,19 +128,19 @@
                                     <td>&pound;19.99</td>
                                 </tr>
 
-                                <tr class="info" >
+                                <tr class="info" style="font-size: 13px;font-family: Times">
                                     
                                     <td>GOLD SERVICE</td>
                                     <td>Clean Alloys; Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish;Foam Clean Seats ;Air Freshner.</td>
                                     <td>&pound;19.99</td>
                                     <td>&pound;24.99</td>
                                 </tr>
-                                    <tr class="info" >
+                                    <tr class="info" style="font-size: 13px;font-family: Times">
                                     
                                     <td>FULL VALET</td>
                                     <td>Car FULLY Washed</td>
-                                    <td>&pound;50</td>
-                                    <td>&pound;50</td>
+                                    <td>Starting from &pound;50</td>
+                                    <td>Starting from &pound;50</td>
                                 </tr>
                             </tbody>
                             <tfoot>
@@ -150,10 +150,10 @@
                                 </tr>
                             </tfoot>
                         </table>
+</div>
 
 
-                    <h1>Make a Reservation </h1>
-
+                    
 
                   <form  style="width:100%;display:flex" id="contact-form" action="{{url('pages/sendMail')}}" method="POST" role="form">
 	  {{ csrf_field() }}
@@ -214,7 +214,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Make Reservation</button>
                 <input type="submit" class="btn btn-success btn-send" onclick="location.href='/';" required="required" value="Go Back">
             </div>
         </div>

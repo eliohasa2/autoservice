@@ -37,15 +37,8 @@
               <h4 class="modal-title" id="myModalLabel">Create</h4>
             </div>
             <div class="modal-body">
-                   <select name="brand">
-              <option value="6">Alfa Romeo</option>
-<option value="Audi">Audi</option>
-<option value="BMW">BMW</option>
-<option value="Fiat">Fiat</option>
-<option value="Ford">Ford</option>
-<option value="Mercedes">Mercedes-Benz</option>
-<option value="Volkswagen">Volkswagen</option>
-              </select> 
+                <input type="text" name="brand" class="form-control" placeholder="brand">
+
                <input type="text" name="model" class="form-control" placeholder="model">
               <textarea class="form-control" name="desc" rows="5" id="desc" placeholder="desc"></textarea>       
               <input type="number" name="year" class="form-control" placeholder="year">
