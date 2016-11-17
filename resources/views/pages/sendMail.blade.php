@@ -75,8 +75,8 @@
                                     
                                     <td>FULL VALET</td>
                                     <td>Car FULLY Washed</td>
-                                    <td>&pound;50</td>
-                                    <td>&pound;50</td>
+                                    <td>Starting From &pound;50</td>
+                                    <td>Starting From &pound;50</td>
                                 </tr>
                             </tbody>
                             <tfoot>
