@@ -1,7 +1,7 @@
 
 						<html>
     <head>
-        <title>Make Reservation</title>
+        <title>Reading Auto Services</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <div class="row">
 
                 <div style="height: 40px;">
-<table class="table table-striped" style="width:50%;float:left;" >
+<table class="table table-striped" style="width:100%;float:left;" >
                             <thead ">
                                 <tr  class="success" style="font-size: 15px;font-family: Times">
                                     
@@ -87,70 +87,7 @@
                             </tfoot>
                         </table>
 
-                        <table class="table" style="width:50%" >
-                            <thead ">
-                                <tr class="info" style="font-size: 14px;font-family: Times">   
-                                    
-                                    <th >Name</th>
-                                    <th style="text-align:center" >Auto Services Description</th>
-                                    <th>Price Cars</th>
-                                    <th>Price 4X4 MPVS</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="info" style="font-size: 13px;font-family: Times">
-                                    
-                                    <td >BLUE SERVICE</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Tyre Dressing; Clean Windows Out.</td>
-                                    <td>&pound;5.99</td>
-                                    <td>&pound;8.99</td>
-                                </tr>
-                                <tr class="info" style="font-size: 13px;font-family: Times" >
-                                    
-                                    <td>BLUE EXTRA</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Clean Wheels; Tyre Dressing; Clean Windows In & Out;Air Freshner.</td>
-                                    <td>&pound;6.99</td>
-                                    <td>&pound;9.99</td>
-                                </tr>
-                                <tr class="info" style="font-size: 13px;font-family: Times" >
-                                    
-                                    <td>RED SERVICE</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Air Freshner.</td>
-                                    <td>&pound;9.99</td>
-                                    <td>&pound;14.99</td>
-                                </tr>
-                                <tr class="info" style="font-size: 13px;font-family: Times">
-                                    
-                                    <td>SILVER SERVICE</td>
-                                    <td>Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish; Air Freshner.</td>
-                                    <td>&pound;14.99</td>
-                                    <td>&pound;19.99</td>
-                                </tr>
-
-                                <tr class="info" style="font-size: 13px;font-family: Times">
-                                    
-                                    <td>GOLD SERVICE</td>
-                                    <td>Clean Alloys; Wax Hand Dry; Wipe Wheels; Wipe Cills; Tyre Dressing; Windows In & Out; Polish and Clean Dashboard; Hoover Seats, Floor & Boot; Spray Polish;Foam Clean Seats ;Air Freshner.</td>
-                                    <td>&pound;19.99</td>
-                                    <td>&pound;24.99</td>
-                                </tr>
-                                    <tr class="info" style="font-size: 13px;font-family: Times">
-                                    
-                                    <td>FULL VALET</td>
-                                    <td>Car FULLY Washed</td>
-                                    <td>Starting from &pound;50</td>
-                                    <td>Starting from &pound;50</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="3"></td>
-                                    
-                                </tr>
-                            </tfoot>
-                        </table>
-</div>
+                   </div>
 
 
                     

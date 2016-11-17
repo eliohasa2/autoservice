@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Our Services</title>
+		<title>Reading Auto Services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -53,7 +53,7 @@ We always work hard to ensure we offer value for money for our consumers!
 					<header>
 						<h2>READING AUTO SERVICES MECHANICS</h2>
 					</header>
-					<p>Our mechanic area offers professional mechanical work done to your car. We are specialized in VOLKSWAGEN, AUDI, BMW, MERCEDES, SKODA, and SEAT. Our services vary from £60-£140, guaranteeing the best and most reliable service to your car.</p>
+					<p>Our mechanic area offers professional mechanical work done to your car. We are specialized in VOLKSWAGEN, AUDI, BMW, MERCEDES, SKODA, and SEAT. Our services starting from £50, guaranteeing the best and most reliable service to your car.</p>
 				</div>
 			</article>
 
