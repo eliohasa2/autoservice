@@ -89,25 +89,29 @@
 
                    </div>
 
-
+<div>
+                    <article  ">
+                <a href="#" ><img src="/images/ccwash.jpeg" style="width:100%;height: 60%" alt="" /></a>
+                <div class="inner">
+                    <header style="float:left">
+                        <h2 style="font-size: 15px;font-family: Times;background-color: lightgray">CARWASH</h2>
+                        <p style="font-size: 15px;font-family: Times;background-color: lightgray">READING AUTOS HAND CAR WASH provides the highest and most professional valeting services. Being very experienced in this industry we don't only have well experienced staff, but we use vehicle-friendly chemicals to valet the vehicles as well. </p>
+                    </header>
                     
-
+                </div>
+            </article>
+</div>
                   <form  style="width:100%;display:flex" id="contact-form" action="{{url('pages/sendMail')}}" method="POST" role="form">
 	  {{ csrf_field() }}
     <div class="messages"></div>
 
     <div class="controls" >
 
-        <div class="row">
+         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="form_name">Type*</label><br>
-                    <select class="btn btn-default dropdown-toggle" id="type" name="type">
-                    <option value=""></option>
-              <option value="Full Valet">Full Valet</option>
-              <option value="Full Reservation">Full Service</option>
-
-              </select> 
+                    <label for="form_name">Type *</label>
+                    <input id="type" type="text" value="Full Vallet" name="type" class="form-control" placeholder="Please enter your vallet *" required="required" data-error="Field is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -157,7 +161,11 @@
         </div>
         
     </div>
-<div    class="fb-comments" data-href="https://www.facebook.com/Reading-Auto-Services-1245963262140371/?fref=ts" data-width="650" data-numposts="5"></div>
+
+
+<div class="fb-comments" data-href="https://www.facebook.com/Reading-Auto-Services-1245963262140371/?fref=ts" data-width="650" data-numposts="5">
+
+</div>
 </form>
 
                 </div>

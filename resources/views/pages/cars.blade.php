@@ -79,7 +79,7 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Our Cars</h2>
+					<h2>Luxury Cars</h2>
 					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 							<p style="margin:0;text-align:left">Model: {{$car->model}}</p>
 							<p style="margin:0;text-align:left">Description: {{$car->desc}}</p>
 							<p style="margin:0;text-align:left">Year: {{$car->year}}</p>
-							<p style="margin:0;text-align:left">Price: {{$car->price}}</p>
+							<p style="margin:0;text-align:left">Price: &pound;{{$car->price}}</p>
 							<p style="margin:0;text-align:left">Miles: {{$car->km}}</p>
 							<p style="margin:0;text-align:left">Fuel Type: {{$car->fueltype}}</p>	
 
