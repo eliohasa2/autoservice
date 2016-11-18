@@ -45,8 +45,8 @@
               <input type="number" name="km" class="form-control" placeholder="km">
               <input type="number" name="price" class="form-control" placeholder="price">
               <select name="fueltype">
-                <option value="diesel">Diesel</option>
-                <option value="gasoline">Gasoline</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Gasoline">Gasoline</option>
 
               </select>    
               <div class="panel-body">
