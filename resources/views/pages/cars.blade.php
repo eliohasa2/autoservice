@@ -79,7 +79,8 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Luxury Cars</h2>
+					<h2>Brothers Cars Sales</h2>
+					<a type="button" href="/"> Go Back </a>
 					<!-- <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p> -->
 				</div>
 			</div>
@@ -91,9 +92,11 @@
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="{{Storage::url($car->imagesss)}}" alt="Image" class="img-responsive">
 						</figure>
-						<div class="fh5co-text">
+						<div class="fh5co-text">	
 							<h2>Brand: {{$car->brand}}</h2>
-							<p style="margin:0;text-align:left">Model: {{$car->model}}</p>
+							
+
+							<p style="margin:0;text-align:left"><a href="/pages/details/{{$car->id}}">Model: {{$car->model}}</a></p>
 							<p style="margin:0;text-align:left">Description: {{$car->desc}}</p>
 							<p style="margin:0;text-align:left">Year: {{$car->year}}</p>
 							<p style="margin:0;text-align:left">Price: &pound;{{$car->price}}</p>

@@ -4,6 +4,7 @@
 	You have a new reservation from: {{$fname}}<br>
 	Type:{{$type}}<br>
 	Phone Number: {{$fnumber}} <br>
+	License Plate: {{$fplate}} <br>
 	Date: {{$date}} <br>
 	Time: {{$time}} <br>
 

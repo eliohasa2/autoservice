@@ -58,6 +58,8 @@ $data=array(
   'type'=>$request->type,
 'fname'=>$request->fname,
 'fnumber'=>$request->fnumber,
+'fplate'=>$request->fplate,
+
 'date'=>$request->date,
 'time'=>$request->time,
 

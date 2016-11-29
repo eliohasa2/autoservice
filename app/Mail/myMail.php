@@ -13,6 +13,7 @@ class myMail extends Mailable
      public $fname;
      public $fnumber;
      public $date;
+     public $fplate;
      public $time;
 
     /**

@@ -48,10 +48,12 @@ Route::post('home/tires/{id}', 'CarsController@tiresUpdate')->name('home.tires.u
 // Route::get('/home',['uses'=>'CarsController@home'])->middleware('authenticated');
 //requests function name
 
+Route::get('pages/details/{id}', 'CarsController@details');
 
 Route::get('/home',['uses'=>'CarsController@home'])->middleware('authenticated');
 
 
+// Route::get('pages/details',['uses'=>'CarsController@details']);
 
 
 Route::get('pages/sendMail',['uses'=>'AutoController@sendMail']);
