@@ -93,10 +93,10 @@
 							<img src="{{Storage::url($car->imagesss)}}" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">	
-							<h2>Brand: {{$car->brand}}</h2>
 							
-
-							<p style="margin:0;text-align:left"><a href="/pages/details/{{$car->id}}">Model: {{$car->model}}</a></p>
+							
+							<p style="margin:0;text-align:left"><a href="/pages/details/{{$car->id}}">Brand: {{$car->brand}}</a></p>
+							<p style="margin:0;text-align:left">Model: {{$car->model}}</a></p>
 							<p style="margin:0;text-align:left">Description: {{$car->desc}}</p>
 							<p style="margin:0;text-align:left">Year: {{$car->year}}</p>
 							<p style="margin:0;text-align:left">Price: &pound;{{$car->price}}</p>

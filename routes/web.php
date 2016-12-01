@@ -40,8 +40,8 @@ Route::group(['middleware'=>['web']],function(){
 Route::resource('home','CarsController');
 Route::get('home/cars/{id}', 'CarsController@edit')->name('home.cars.edit');
 Route::post('home/cars/{id}', 'CarsController@update')->name('home.cars.update');
-Route::get('home/tires/{id}', 'CarsController@tiresEdit')->name('home.tires.edit');
-Route::post('home/tires/{id}', 'CarsController@tiresUpdate')->name('home.tires.update');
+Route::get('home/tires/{id}', 'CarsController@imgsEdit')->name('home.cars.imgedit');
+Route::post('home/tires/{id}', 'CarsController@imgUpdate')->name('home.cars.imgUpdate');
 // Route::resource('home','TiresController');
 
 });

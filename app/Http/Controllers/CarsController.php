@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Cars;
+use App\Images;
+use Illuminate\Support\Facades\DB;
+
 use App\Tires;
 
 class CarsController extends Controller
@@ -124,9 +127,10 @@ class CarsController extends Controller
      */
     public function details($id)
     {
-        
-         $car= Cars::find($id);
-        return view('pages.details')->with('car',$car);
+                 $car= Cars::find($id);
+
+          $cars1 = DB::select('select url from images_table where on_car = ?', [$id]);
+        return view('pages.details', ['cars1' => $cars1])->with('car',$car);
     }
 
     /**
@@ -143,11 +147,11 @@ class CarsController extends Controller
     }
 
 
-    public function tiresEdit($id)
+    public function imgsEdit($id)
     {
-             $car=Tires::find($id);
+             $car=Cars::find($id);
 
-             return view('tires.edit')->with(['car' => $car]);
+             return view('cars.imgedit')->with(['car' => $car]);
     }
 
     /**
@@ -187,27 +191,18 @@ class CarsController extends Controller
 
 
 
-    public function tiresUpdate(Request $request, $id)
+    public function imgUpdate(Request $request, $id)
     {
-         $this->validate($request,[
-            'brand'=>'required',
-            'model'=>'required',
-            'desc'=>'required',
-            'year'=>'required',
-            'price'=>'required',
-             ]);
+     
 
-        $cars=Tires::find($id);
-        $cars->brand=$request->brand;
-        $cars->model=$request->model;
-        $cars->year=$request->year;
-        $cars->desc=$request->desc;
-        $cars->price=$request->price;
-         if ($request->file('imagesss')) {
-            $cars->imagesss = $request->imagesss->storeAs('images', uniqid().'.jpg', 'public');
+        $images=new Images;
+        $images->on_car=$request->id;
+
+        if ($request->file('url')) {
+            $images->url = $request->url->storeAs('images', uniqid().'.jpg', 'public');
         }
-        $cars->save();
-        return redirect('/home');
+        $images->save();
+        return redirect('/home/tires/'.$id);
 
 
     }

@@ -155,6 +155,8 @@
 
       <tr class="success">
         <td><a type="button" class="btn btn-danger" href="{{route('home.cars.edit', $car)}}" class="btn btn-success">Update</a>
+                <td><a type="button" class="btn btn-danger" href="{{route('home.cars.imgedit', $car)}}" class="btn btn-success">Upload Images</a>
+
         </td>
         <td><form class="" class="btn"  action="/home/{{$car->id}}" method="post">
           <input type="hidden" name="_method" value="delete">
@@ -266,26 +268,7 @@
     <tr class="success">
       @foreach ($tires as $tire)
 
-     <!--  <tr class="success">
-        <td><a type="button" class="btn btn-danger" href="{{route('home.tires.edit', $tire)}}" class="btn btn-success">Update</a>
-        </td> -->
-   <!--      <td><form class="" class="btn"  action="/home/{{$tire->id}}" method="post">
-          <input type="hidden" name="_method" value="delete">
-          <input type="hidden" name="_token" value="{{ csrf_token()}}">
-          <input type="submit" name="delTire" value="delete"> 
-
-
-
-        </form> -->
-     <!--  </td>
-      <td>{{$tire->brand}}</td>
-      <td>{{$tire->model}}</td>
-      <td>{{$tire->desc}}</td>
-      <td>{{$tire->year}}</td>
-      <td>{{$tire->price}}</td>
-      <!-- <td>{{$tire->created_at}}</td> -
-            <!-- <td><img src="{{Storage::url($car->imagesss)}}" width="30px" alt="Image" class="img-responsive"></td> --> 
-
+    
     </tr>
   </tbody>
   @endforeach
