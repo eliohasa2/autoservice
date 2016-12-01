@@ -29,7 +29,7 @@
               <input type="number" name="price"  value="{{$car->price}}" class="form-control" placeholder="price">
               <select name="fueltype">
               <option value="diesel" @if ($car->fueltype == 'diesel') selected="selected" @endif>Diesel</option>
-              <option value="gasoline" @if ($car->fueltype == 'gasoline') selected="selected" @endif>Gasoline</option>
+              <option value="petrol" @if ($car->fueltype == 'petrol') selected="selected" @endif>Petrol</option>
 
               </select>    
 

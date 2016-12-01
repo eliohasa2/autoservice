@@ -30,7 +30,16 @@
 	<!--[if IE]>
 	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
 	<![endif]-->
-	
+	<script type="text/javascript" src="/assets/js1/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.selectik.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.countdown.js"></script>
+	<script type="text/javascript" src="/assets/js1/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="/assets/js1/js.js"></script>
 </head>
 <!--BEGIN HEADER-->
 	
@@ -43,17 +52,23 @@
 				
 	
 					<h1><strong>{{$car->brand}} {{$car->model}}</strong></h1>
+
 					<div class="car_image_wrapper car_group">
 						<div class="big_image">
 							
-								<img src="{{Storage::url($car->imagesss)}}" alt="" class="zoom"/>
+							<a href="{{Storage::url($car->imagesss)}}"  class="car_group">
+								<!-- <img src="" alt="" class="zoom"/> -->
+								<img src="{{Storage::url($car->imagesss)}}"  alt=""/>
+							</a>
 								
 							</a>
 						</div>
 						<div class="small_img">
 						@foreach ($cars1 as $car1) 
 							
+							<a href="{{Storage::url($car1->url)}}" class="car_group">
 								<img src="{{Storage::url($car1->url)}}" alt=""/>
+							</a>
 						
 							@endforeach
 

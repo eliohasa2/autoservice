@@ -67,14 +67,14 @@
 
 #fancybox-outer {
 	position: relative;
-	width: 100%;
-	height: 100%;
+	width: 30%;
+	height: 10%;
 	background: #fff;
 }
 
 #fancybox-content {
-	width: 0;
-	height: 0;
+	width: 10%;
+	height: 30%;
 	padding: 0;
 	outline: none;
 	position: relative;
@@ -87,8 +87,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 30%;
+	height: 10%;
 	background: transparent;
 	z-index: 1101;
 }
@@ -113,8 +113,8 @@
 }
 
 #fancybox-img {
-	width: 100%;
-	height: 100%;
+	width: 30% !important;
+	height: 10% !important;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -124,8 +124,8 @@
 }
 
 #fancybox-frame {
-	width: 100%;
-	height: 100%;
+	width: 30%;
+	height: 10%;
 	border: none;
 	display: block;
 }

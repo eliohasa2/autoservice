@@ -17,42 +17,42 @@ jQuery(document).ready(function(){
 		animationComplete: function(){}
 	});*/
 	$('.slider_1').bxSlider({
-   	 	slideWidth: 500,
+   	 	slideWidth: 940,
     	minSlides: 1,
     	maxSlides: 1,
     	slideMargin: 0,
     	controls : false
   	});
   	$('.slider_2').bxSlider({
-   	 	slideWidth: 500,
+   	 	slideWidth: 940,
     	minSlides: 1,
     	maxSlides: 1,
     	slideMargin: 0,
     	controls : false
   	});
 	jQuery('.select_1').selectik({
-		width: '500',
+		width: 'auto',
 		maxItems: 5,
 		customScroll: 1,
 		speedAnimation: 100,
 		smartPosition: false
 	});
 	jQuery('.select_2').selectik({
-		width: '500',
+		width: 'auto',
 		maxItems: 5,
 		customScroll: 1,
 		speedAnimation: 100,
 		smartPosition: false
 	});
 	jQuery('.select_3').selectik({
-		width: '500',
+		width: 'auto',
 		maxItems: 5,
 		customScroll: 1,
 		speedAnimation: 100,
 		smartPosition: false
 	});
 	jQuery('.select_4').selectik({
-		width: '500',
+		width: 'auto',
 		maxItems: 5,
 		customScroll: 1,
 		speedAnimation: 100,
@@ -98,8 +98,8 @@ jQuery(document).ready(function(){
 	    $(this).addClass('current').siblings().removeClass('current').parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
 	});
 	$(".video_box .preview a").fancybox({
-		'width'				: '50%',
-		'height'			: '50%',
+		'width'				: '75%',
+		'height'			: '75%',
 		'autoScale'			: false,
 		'transitionIn'		: 'elastic',
 		'transitionOut'		: 'elastic',

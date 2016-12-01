@@ -46,7 +46,7 @@
               <input type="number" name="price" class="form-control" placeholder="price">
               <select name="fueltype">
                 <option value="Diesel">Diesel</option>
-                <option value="Gasoline">Gasoline</option>
+                <option value="Petrol">Petrol</option>
 
               </select>    
               <div class="panel-body">
@@ -104,7 +104,7 @@
               <input type="number" name="price" class="form-control"   placeholder="price">
               <select name="fueltype">
                 <option value="diesel">Diesel</option>
-                <option value="gasoline">Gasoline</option>
+                <option value="petrol">Petrol</option>
 
               </select>    
             </div>
