@@ -103,6 +103,9 @@
 								<div class="left">Description:</div>
 								<textarea  style="width:350px;height:100px" class="right"> {{$car->desc}}</textarea>
 							</div>
+							<div class="line grey_area">
+								<a type="button" href="/pages/cars">Go Back</a>
+							</div>
 						
 						</div>
 					
