@@ -142,7 +142,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="form_phone">Reg Plate</label>
-                    <input id="fplate" type="text" name="fplate" class="form-control" placeholder="Please enter your license plate" required="required">
+                    <input id="fplate" type="text" name="fplate" class="form-control" placeholder="Please enter your reg plate" required="required">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
