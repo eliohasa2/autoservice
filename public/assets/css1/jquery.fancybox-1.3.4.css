@@ -68,10 +68,10 @@
 }
 
 #fancybox-outer {
-	margin-left:10%;
+	margin-left:5%;
 	position: relative;
-	width:90%;
-	height: 80%;
+	width:50%;
+	height: 75%;
 
 }
 #fancybox-content {
