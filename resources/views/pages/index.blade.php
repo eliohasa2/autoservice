@@ -128,8 +128,8 @@
 
 		<!-- Main -->
 		<section id="main"  class="container">
-<section class="box special" id="here" style="margin-top:10%;width:40%;margin-left:30%">
-				<p style="color:black">Direct: +44 (0) 011-8959-0415 <br> Mobile: +44 (0) 074-9505-6667<br>782-784 Oxford Road<br> RG30 1EL </p>
+<section class="box special" id="here" >
+				<p style="color:black">Direct: &nbsp; 011-8959-0415 <br>Mobile: 074-9505-6667<br>782-784 Oxford Road<br> RG30 1EL </p>
 
 		</section>
 		
@@ -206,8 +206,8 @@
 						<div class="col-md-3 col-md-offset-1">
 							<h5 style="color:black" class="title">Contact Us</h5>
 							<ul style="color:black;list-style: none ">
-								<li>Direct: +44 (0) 011-8959-0415</li>
-								<li>Mobile: +44 (0) 074-9505-6667</li>
+								<li>Direct:&nbsp;&nbsp; 011-8959-0415</li>
+								<li>Mobile: 074-9505-6667</li>
 								<li>782-784 Oxford Road</li>
 								<li>RG30 1EL</li>
 							</ul>
